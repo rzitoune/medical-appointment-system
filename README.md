@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  Medical Appointment Management System
 
 A web-based medical appointment management system built with Laravel and React.
@@ -115,3 +116,7 @@ Key endpoints:
 - GET /api/doctors - List all doctors
 - POST /api/patient/appointments - Book appointment
 - GET /api/patient/appointments - View appointments
+=======
+# medical-appointment-system
+Full-stack medical appointment platform with patient/doctor registration, appointment scheduling, medical records management, and multi-language support. Laravel backend with React frontend.
+>>>>>>> e303e4933e3b878d166df9cf8168e6b6bc8422bf
