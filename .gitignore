@@ -1,0 +1,79 @@
+# Laravel
+/.phpunit.cache
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.env.production
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+
+# IDE
+/.fleet
+/.idea
+/.vscode
+*.swp
+*.swo
+*~
+.DS_Store
+
+# React / Vite Frontend
+/frontend/node_modules
+/frontend/dist
+/frontend/build
+/frontend/.vite
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.production
+
+# Database
+*.sqlite
+*.sqlite-journal
+/database/*.sqlite
+/database/*.sqlite-journal
+
+# Logs
+/storage/logs/*.log
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+!/storage/framework/cache/.gitignore
+!/storage/framework/sessions/.gitignore
+!/storage/framework/testing/.gitignore
+!/storage/framework/views/.gitignore
+
+# Testing
+/coverage
+/.phpunit.cache
+/tests/coverage
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.orig
+
+# Build artifacts
+/public/css
+/public/js
+/public/mix-manifest.json
+
+# last
+/storage/app/public
+/public/storage
+/public/vendor
+.env.development
+.env.testing
+create_database.sql
