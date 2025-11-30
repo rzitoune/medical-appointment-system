@@ -3,7 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import axios from '../api/axios';
 import LanguageSwitcher from '../components/LanguageSwitcher';
+import DarkModeToggle from '../components/DarkModeToggle';
 import './Doctors.css';
+import './Doctors-dark.css';
 
 const Doctors = () => {
   const navigate = useNavigate();
@@ -213,6 +215,7 @@ const Doctors = () => {
             <span className="logo-text">Mawidi</span>
           </div>
           <div className="header-actions">
+            <DarkModeToggle />
             <LanguageSwitcher />
             <button onClick={() => navigate('/login')} className="login-btn">
               Login

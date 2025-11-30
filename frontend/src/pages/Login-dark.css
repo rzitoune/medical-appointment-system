@@ -1,0 +1,100 @@
+/* Login Page Dark Mode Styles */
+.dark-mode .login-page {
+  background: var(--bg-primary);
+}
+
+.dark-mode .login-left {
+ background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+.dark-mode .branding h1,
+.dark-mode .welcome-content h2 {
+  color: var(--text-primary);
+}
+
+.dark-mode .tagline,
+.dark-mode .welcome-content p {
+  color: var(--text-secondary);
+}
+
+.dark-mode .feature-item span {
+  color: var(--text-secondary);
+}
+
+.dark-mode .login-right {
+  background: var(--card-bg);
+}
+
+.dark-mode .language-switcher-top {
+  background: transparent;
+}
+
+.dark-mode .form-header h2 {
+  color: var(--text-primary);
+}
+
+.dark-mode .form-header p {
+  color: var(--text-secondary);
+}
+
+.dark-mode label {
+  color: var(--text-primary);
+}
+
+.dark-mode .form-input,
+.dark-mode .type-btn {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.dark-mode .form-input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.6;
+}
+
+.dark-mode .form-input:focus {
+  border-color: #6366f1;
+  background: var(--bg-primary);
+}
+
+.dark-mode .type-btn:hover {
+  background: var(--bg-primary);
+  border-color: #6366f1;
+}
+
+.dark-mode .type-btn.active {
+  background: linear-gradient(135deg, #6366f1, #06b6d4);
+  color: white;
+  border-color: transparent;
+}
+
+.dark-mode .input-wrapper svg {
+  color: var(--text-secondary);
+}
+
+.dark-mode .password-toggle {
+  color: var(--text-secondary);
+}
+
+.dark-mode .submit-btn:not(:hover) {
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.dark-mode .form-footer p {
+  color: var(--text-secondary);
+}
+
+.dark-mode .link {
+  color: #6366f1;
+}
+
+.dark-mode .link:hover {
+  color: #818cf8;
+}
+
+.dark-mode .error-message {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: #ef4444;
+  color: #fca5a5;
+}

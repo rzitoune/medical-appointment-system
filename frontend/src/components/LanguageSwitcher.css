@@ -8,15 +8,21 @@
   align-items: center;
   gap: 8px;
   padding: 8px 16px;
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #e2e8f0;
   border-radius: 50px;
-  color: white;
+  color: #1e293b;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
+}
+
+.dark-mode .language-button {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
 .language-button:hover {
@@ -99,7 +105,7 @@
 
 .language-option.active {
   background: linear-gradient(135deg, #f0fdf4, #dcfce7);
-  color: #10b981;
+  color: #6366f1;
 }
 
 .flag {
@@ -114,7 +120,24 @@
 .check-icon {
   width: 18px;
   height: 18px;
-  color: #10b981;
+  color: #6366f1;
+}
+
+/* Language Switcher on Light Dashboard */
+.dashboard-container .language-button {
+  background: white;
+  border: 2px solid #e5e7eb;
+  color: #1e293b;
+}
+
+.dashboard-container .language-button:hover {
+  border-color: #6366f1;
+  background: #f8fafc;
+}
+
+.dashboard-container .globe-icon,
+.dashboard-container .chevron {
+  color: #64748b;
 }
 
 /* Dark theme variant for login/register pages */
@@ -127,7 +150,7 @@
 
 .login-page .language-button:hover,
 .register-page .language-button:hover {
-  border-color: #10b981;
+  border-color: #6366f1;
   background: #f0fdf4;
 }
 

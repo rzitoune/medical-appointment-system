@@ -1,0 +1,133 @@
+/* Doctors Page Dark Mode Styles */
+.dark-mode .doctors-page {
+  background: var(--bg-primary);
+}
+
+.dark-mode .doctors-header {
+  background: rgba(15, 23, 42, 0.95);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dark-mode .doctors-hero {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+.dark-mode .doctors-hero h1 {
+  color: var(--text-primary);
+}
+
+.dark-mode .doctors-hero p {
+  color: var(--text-secondary);
+}
+
+.dark-mode .specializations-section {
+  background: var(--bg-primary);
+}
+
+.dark-mode .section-title {
+  color: var(--text-primary);
+}
+
+.dark-mode .section-subtitle {
+  color: var(--text-secondary);
+}
+
+.dark-mode .specialization-card {
+  background: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+.dark-mode .specialization-card:hover {
+  background: var(--bg-secondary);
+  border-color: #6366f1;
+  box-shadow: var(--shadow-lg);
+}
+
+.dark-mode .specialization-card.active {
+  background: linear-gradient(135deg, #6366f1, #06b6d4);
+  color: white;
+}
+
+.dark-mode .specialization-card h3 {
+  color: var(--text-primary);
+}
+
+.dark-mode .specialization-card.active h3 {
+  color: white;
+}
+
+.dark-mode .specialization-card p {
+  color: var(--text-secondary);
+}
+
+.dark-mode .specialization-card.active p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.dark-mode .doctors-list-section {
+  background: var(--bg-primary);
+}
+
+.dark-mode .doctor-card {
+  background: var(--card-bg);
+  border-color: var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.dark-mode .doctor-card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: #6366f1;
+}
+
+.dark-mode .doctor-name {
+  color: var(--text-primary);
+}
+
+.dark-mode .doctor-specialization,
+.dark-mode .doctor-qualifications {
+  color: var(--text-secondary);
+}
+
+.dark-mode .detail-item,
+.dark-mode .work-address,
+.dark-mode .languages {
+  color: var(--text-secondary);
+}
+
+.dark-mode .doctor-avatar {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.dark-mode .badge {
+  background: linear-gradient(135deg, #6366f1, #06b6d4);
+}
+
+.dark-mode .book-btn:not(:hover) {
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.dark-mode .empty-state h3 {
+  color: var(--text-primary);
+}
+
+.dark-mode .empty-state p {
+  color: var(--text-secondary);
+}
+
+.dark-mode .empty-state svg {
+  color: var(--text-secondary);
+}
+
+.dark-mode .loading-state p {
+  color: var(--text-secondary);
+}
+
+.dark-mode .cta-section {
+  background: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%);
+}
+
+.dark-mode .doctors-footer {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: var(--text-secondary);
+}

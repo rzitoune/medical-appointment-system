@@ -38,13 +38,21 @@
     "medicalRecords": "Dossiers Médicaux",
     "prescriptions": "Ordonnances",
     "teleconsultation": "Téléconsultation",
+    "teleconsultationTitle": "Téléconsultation",
+    "teleconsultationDesc": "Connectez-vous avec des médecins à distance via des consultations vidéo",
+    "support247Title": "Assistance 24/7",
+    "support247Desc": "Assistance médicale 24h/24 et soins d'urgence",
+    "securePrivateTitle": "Sécurisé et Privé",
+    "securePrivateDesc": "Vos données médicales sont cryptées et totalement confidentielles",
     "emergencyCare": "Soins d'Urgence",
     "contactUs": "Nous Contacter",
     "privacyPolicy": "Politique de Confidentialité",
     "termsOfService": "Conditions d'Utilisation",
     "cookiePolicy": "Politique des Cookies",
     "developedBy": "Développé avec",
-    "allRightsReserved": "Tous droits réservés."
+    "allRightsReserved": "Tous droits réservés.",
+    "appointmentManagement": "Gestion des Rendez-vous",
+    "statistics": "Statistiques"
   },
   "nav": {
     "overview": "Aperçu",
@@ -73,6 +81,10 @@
     "professional": "Professionnel de Santé",
     "admin": "Administrateur",
     "secretary": "Secrétaire",
+    "address": "Adresse",
+    "addressPlaceholder": "Entrez votre adresse",
+    "passwordMismatch": "Les mots de passe ne correspondent pas",
+    "passwordTooShort": "Le mot de passe doit contenir au moins 6 caractères",
     "signIn": "Se connecter",
     "signUp": "Créer un compte",
     "signingIn": "Connexion en cours...",
@@ -82,7 +94,8 @@
     "registerHere": "Inscrivez-vous ici",
     "signInHere": "Connectez-vous ici",
     "loginSubtitle": "Accédez à vos rendez-vous médicaux",
-    "registerSubtitle": "Rejoignez la plateforme Mawidi"
+    "registerSubtitle": "Rejoignez la plateforme Mawidi",
+    "backToHome": "Retour à l'Accueil"
   },
   "admin": {
     "title": "Panneau Admin",
@@ -145,7 +158,20 @@
     "languages": "Langues",
     "insurance": "Assurance Acceptée",
     "teleconsultation": "Téléconsultation Disponible",
-    "address": "Adresse"
+    "address": "Adresse",
+    "appointmentDate": "Date du Rendez-vous",
+    "appointmentTime": "Heure du Rendez-vous",
+    "reasonForVisit": "Motif de la Visite",
+    "reasonPlaceholder": "Décrivez vos symptômes ou le motif de consultation...",
+    "time": "Heure",
+    "reason": "Motif",
+    "workAddress": "Adresse Professionnelle",
+    "rppsNumber": "Numéro RPPS",
+    "qualifications": "Qualifications",
+    "consultationFee": "Tarif de Consultation",
+    "leaveBlankPassword": "laisser vide pour conserver l'actuel",
+    "minutes": "minutes",
+    "optional": "Facultatif"
   },
   "specializations": {
     "cardiology": "Cardiologie",
@@ -168,6 +194,9 @@
     "filter": "Filtrer",
     "yes": "Oui",
     "no": "Non",
-    "close": "Fermer"
+    "close": "Fermer",
+    "confirm": "Confirmer",
+    "booking": "Réservation...",
+    "confirmBooking": "Confirmer la Réservation"
   }
 }

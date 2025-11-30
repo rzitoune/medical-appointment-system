@@ -1,0 +1,89 @@
+/* Register Page Dark Mode Styles */
+.dark-mode .register-page {
+  background: var(--bg-primary);
+}
+
+.dark-mode .register-left {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+.dark-mode .register-left .branding h1 {
+  color: var(--text-primary);
+}
+
+.dark-mode .register-left .tagline {
+  color: var(--text-secondary);
+}
+
+.dark-mode .feature-item h3 {
+  color: var(--text-primary);
+}
+
+.dark-mode .feature-item p {
+  color: var(--text-secondary);
+}
+
+.dark-mode .feature-icon {
+  background: linear-gradient(135deg, #6366f1, #06b6d4);
+}
+
+.dark-mode .register-right {
+  background: var(--card-bg);
+}
+
+.dark-mode .register-form-container .form-header h2 {
+  color: var(--text-primary);
+}
+
+.dark-mode .register-form-container .form-header p {
+  color: var(--text-secondary);
+}
+
+.dark-mode .register-form label {
+  color: var(--text-primary);
+}
+
+.dark-mode .register-form .form-input,
+.dark-mode .register-form select {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.dark-mode .register-form .form-input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.6;
+}
+
+.dark-mode .register-form .form-input:focus,
+.dark-mode .register-form select:focus {
+  border-color: #6366f1;
+  background: var(--bg-primary);
+}
+
+.dark-mode .register-form select option {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.dark-mode .submit-btn:not(:hover) {
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.dark-mode .form-footer p {
+  color: var(--text-secondary);
+}
+
+.dark-mode .form-footer .link {
+  color: #6366f1;
+}
+
+.dark-mode .form-footer .link:hover {
+  color: #818cf8;
+}
+
+.dark-mode .error-message {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: #ef4444;
+  color: #fca5a5;
+}

@@ -1,0 +1,102 @@
+/* Orange/Amber Card Theme for Admin & Patient Sections */
+
+/* Admin dashboard - orange cards */
+.admin-dashboard .professional-card,
+.admin-dashboard .card:not(.stat-card):not(.modal-content) {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%) !important;
+  border: 1px solid #fed7aa !important;
+}
+
+.admin-dashboard .professional-card:hover,
+.admin-dashboard .card:not(.stat-card):hover {
+  background: linear-gradient(135deg, #ffedd5 0%, #fed7aa 100%) !important;
+  border-color: #fb923c !important;
+  box-shadow: 0 12px 24px rgba(251, 146, 60, 0.15), 0 4px 8px rgba(251, 146, 60, 0.1) !important;
+}
+
+/* Patient dashboard - lighter orange theme */
+.patient-dashboard .professional-card,
+.patient-dashboard .card:not(.stat-card):not(.modal-content) {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%) !important;
+  border: 1px solid #fed7aa !important;
+}
+
+.patient-dashboard .professional-card:hover,
+.patient-dashboard .card:not(.stat-card):hover {
+  background: linear-gradient(135deg, #ffedd5 0%, #fed7aa 100%) !important;
+  border-color: #fb923c !important;
+  box-shadow: 0 12px 24px rgba(251, 146, 60, 0.15), 0 4px 8px rgba(251, 146, 60, 0.1) !important;
+}
+
+/* Orange gradient accent bar */
+.admin-dashboard .professional-card::before,
+.admin-dashboard .card:not(.stat-card)::before,
+.patient-dashboard .professional-card::before,
+.patient-dashboard .card:not(.stat-card)::before {
+  background: linear-gradient(90deg, #f97316, #fb923c) !important;
+}
+
+/* Better text contrast on orange backgrounds */
+.admin-dashboard .professional-card h3,
+.patient-dashboard .professional-card h3 {
+  color: #000000 !important;
+}
+
+.admin-dashboard .specialization,
+.patient-dashboard .specialization {
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.12), rgba(251, 146, 60, 0.12)) !important;
+  color: #ea580c !important;
+}
+
+.admin-dashboard .license,
+.admin-dashboard .email,
+.admin-dashboard .professional-card p,
+.patient-dashboard .license,
+.patient-dashboard .email,
+.patient-dashboard .professional-card p {
+  color: #000000 !important;
+}
+
+.admin-dashboard .price,
+.patient-dashboard .price {
+  background: linear-gradient(135deg, #f97316, #fb923c) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+/* Dark mode - keep orange theme but darker */
+.dark-mode .admin-dashboard .professional-card,
+.dark-mode .admin-dashboard .card:not(.stat-card):not(.modal-content),
+.dark-mode .patient-dashboard .professional-card,
+.dark-mode .patient-dashboard .card:not(.stat-card):not(.modal-content) {
+  background: linear-gradient(135deg, #431407 0%, #7c2d12 100%) !important;
+  border-color: rgba(251, 146, 60, 0.3) !important;
+}
+
+.dark-mode .admin-dashboard .professional-card:hover,
+.dark-mode .patient-dashboard .professional-card:hover {
+  background: linear-gradient(135deg, #7c2d12 0%, #9a3412 100%) !important;
+  border-color: rgba(251, 146, 60, 0.5) !important;
+}
+
+/* Dark mode text */
+.dark-mode .admin-dashboard .professional-card h3,
+.dark-mode .patient-dashboard .professional-card h3 {
+  color: #fed7aa !important;
+}
+
+.dark-mode .admin-dashboard .specialization,
+.dark-mode .patient-dashboard .specialization {
+  background: rgba(251, 146, 60, 0.2) !important;
+  color: #fb923c !important;
+}
+
+.dark-mode .admin-dashboard .license,
+.dark-mode .admin-dashboard .email,
+.dark-mode .admin-dashboard .professional-card p,
+.dark-mode .patient-dashboard .license,
+.dark-mode .patient-dashboard .email,
+.dark-mode .patient-dashboard .professional-card p {
+  color: #fdba74 !important;
+}

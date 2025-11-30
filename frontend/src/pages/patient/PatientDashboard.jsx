@@ -193,8 +193,8 @@ const PatientDashboard = () => {
                   <p className="specialization">{apt.medical_professional?.specialization}</p>
                   <div className="appointment-details">
                     <p><strong>{t('dashboard.date')}:</strong> {new Date(apt.appointment_date).toLocaleDateString()}</p>
-                    <p><strong>Time:</strong> {apt.appointment_time}</p>
-                    {apt.reason && <p><strong>Reason:</strong> {apt.reason}</p>}
+                    <p><strong>{t('dashboard.time')}:</strong> {apt.appointment_time}</p>
+                    {apt.reason && <p><strong>{t('dashboard.reason')}:</strong> {apt.reason}</p>}
                   </div>
                 </div>
               ))
@@ -206,18 +206,18 @@ const PatientDashboard = () => {
       {/* Booking Modal */}
       {showBookingModal && selectedDoctor && (
         <div className="modal-overlay" onClick={() => setShowBookingModal(false)}>
-          <div className="modal-content card" onClick={(e) => e.stopPropagation()}>
-            <h2>Book Appointment</h2>
+          <div className="modal-content card" onClick={(e) => e.stopPropagation()} style={{ maxHeight: '90vh', overflowY: 'auto' }}>
+            <h2>{t('patient.bookAppointment')}</h2>
             <div className="doctor-info-modal">
               <h3>Dr. {selectedDoctor.user.first_name} {selectedDoctor.user.last_name}</h3>
               <p className="specialization">{selectedDoctor.specialization}</p>
-              <p><strong>Consultation Fee:</strong> {selectedDoctor.consultation_price} MAD</p>
-              <p><strong>Duration:</strong> {selectedDoctor.consultation_duration} minutes</p>
+              <p><strong>{t('dashboard.consultationFee')}:</strong> {selectedDoctor.consultation_price} MAD</p>
+              <p><strong>{t('dashboard.duration')}:</strong> {selectedDoctor.consultation_duration} {t('dashboard.minutes')}</p>
             </div>
 
             <form onSubmit={handleBookingSubmit}>
               <div className="form-group">
-                <label>Appointment Date *</label>
+                <label>{t('dashboard.appointmentDate')} *</label>
                 <input
                   type="date"
                   value={bookingData.appointment_date}
@@ -228,7 +228,7 @@ const PatientDashboard = () => {
               </div>
 
               <div className="form-group">
-                <label>Appointment Time *</label>
+                <label>{t('dashboard.appointmentTime')} *</label>
                 <input
                   type="time"
                   value={bookingData.appointment_time}
@@ -238,11 +238,11 @@ const PatientDashboard = () => {
               </div>
 
               <div className="form-group">
-                <label>Reason for Visit (Optional)</label>
+                <label>{t('dashboard.reasonForVisit')} ({t('dashboard.optional')})</label>
                 <textarea
                   value={bookingData.reason}
                   onChange={(e) => setBookingData({...bookingData, reason: e.target.value})}
-                  placeholder="Describe your symptoms or reason for consultation..."
+                  placeholder={t('dashboard.reasonPlaceholder')}
                   rows="3"
                 />
               </div>
@@ -272,7 +272,7 @@ const PatientDashboard = () => {
                   onClick={() => setShowBookingModal(false)}
                   disabled={submitting}
                 >
-                  Cancel
+                  {t('common.cancel')}
                 </button>
                 <button 
                   type="submit" 

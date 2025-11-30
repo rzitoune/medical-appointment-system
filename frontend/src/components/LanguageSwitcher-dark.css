@@ -1,0 +1,67 @@
+/* Language Switcher Dark Mode Styles */
+.dark-mode .language-button {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.dark-mode .language-button:hover {
+  background: var(--bg-secondary);
+  border-color: #6366f1;
+}
+
+.dark-mode .globe-icon svg,
+.dark-mode .chevron svg {
+  color: var(--text-secondary);
+}
+
+.dark-mode .language-dropdown {
+  background: var(--card-bg);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+}
+
+.dark-mode .language-option {
+  background: var(--card-bg);
+  color: var(--text-primary);
+}
+
+.dark-mode .language-option:hover {
+  background: var(--bg-secondary);
+}
+
+.dark-mode .language-option.active {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(99, 102, 241, 0.1));
+  color: #818cf8;
+}
+
+.dark-mode .check-icon {
+  color: #818cf8;
+}
+
+/* Ensure language switcher on login/register pages work in dark mode */
+.dark-mode.login-page .language-button,
+.dark-mode.register-page .language-button {
+  background: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.dark-mode.login-page .language-button:hover,
+.dark-mode.register-page .language-button:hover {
+  border-color: #6366f1;
+  background: var(--bg-secondary);
+}
+
+.dark-mode .globe-icon,
+.dark-mode .chevron {
+  color: var(--text-secondary) !important;
+}
+
+/* Fix for language switcher top positioning */
+.language-switcher-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}

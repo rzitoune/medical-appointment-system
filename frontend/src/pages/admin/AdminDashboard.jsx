@@ -177,7 +177,7 @@ const AdminDashboard = () => {
                       className="btn btn-primary btn-sm"
                       onClick={() => handleEditDoctor(doctor)}
                     >
-                      Edit
+                      {t('common.edit')}
                     </button>
                     <button 
                       className="btn btn-danger btn-sm"
@@ -188,8 +188,10 @@ const AdminDashboard = () => {
                   </div>
                 </div>
                 <p className="specialization">{doctor.specialization}</p>
-                <p>{doctor.user.email}</p>
-                <p>{doctor.user.phone}</p>
+                <div className="doctor-details-block">
+                  <p>{doctor.user.email}</p>
+                  <p>{doctor.user.phone}</p>
+                </div>
                 <p className="price">{doctor.consultation_price} MAD</p>
               </div>
             ))}
@@ -200,7 +202,7 @@ const AdminDashboard = () => {
       {showModal && (
         <div className="modal-overlay">
           <div className="modal-content card" style={{ maxHeight: '90vh', overflowY: 'auto' }}>
-            <h2>{editingDoctor ? 'Edit Doctor' : t('admin.addDoctor')}</h2>
+            <h2>{editingDoctor ? t('common.edit') + ' ' + t('admin.doctor') : t('admin.addDoctor')}</h2>
             <form onSubmit={handleSubmit}>
               <div className="form-row">
                 <div className="form-group">
@@ -219,7 +221,7 @@ const AdminDashboard = () => {
                   <input type="email" name="email" value={formData.email} onChange={handleInputChange} required />
                 </div>
                 <div className="form-group">
-                  <label>{t('auth.password')} {editingDoctor && '(leave blank to keep current)'}</label>
+                  <label>{t('auth.password')} {editingDoctor && '(' + t('dashboard.leaveBlankPassword') + ')'}</label>
                   <input 
                     type="password" 
                     name="password" 
@@ -256,7 +258,7 @@ const AdminDashboard = () => {
 
               <div className="form-row">
                 <div className="form-group">
-                  <label>RPPS Number</label>
+                  <label>{t('dashboard.rppsNumber')}</label>
                   <input name="rpps_number" value={formData.rpps_number} onChange={handleInputChange} required />
                 </div>
                 <div className="form-group">
@@ -266,12 +268,12 @@ const AdminDashboard = () => {
               </div>
 
               <div className="form-group">
-                <label>Qualifications</label>
+                <label>{t('dashboard.qualifications')}</label>
                 <textarea name="qualifications" value={formData.qualifications} onChange={handleInputChange} required />
               </div>
 
               <div className="form-group">
-                <label>Work Address</label>
+                <label>{t('dashboard.workAddress')}</label>
                 <input name="work_address" value={formData.work_address} onChange={handleInputChange} required />
               </div>
 

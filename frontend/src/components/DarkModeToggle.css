@@ -1,0 +1,157 @@
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-track {
+  width: 56px;
+  height: 30px;
+  background: linear-gradient(135deg, #6366f1, #06b6d4);
+  border-radius: 50px;
+  padding: 3px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
+}
+
+.dark-mode-toggle:hover .toggle-track {
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+}
+
+.toggle-thumb {
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .toggle-thumb {
+  transform: translateX(26px);
+}
+
+.toggle-thumb svg {
+  width: 14px;
+  height: 14px;
+  color: #f59e0b; /* Sun color for light mode */
+  transition: all 0.3s ease;
+}
+
+.dark-mode .toggle-thumb svg {
+  color: #1e293b;
+}
+
+/* Dark mode CSS variables and global styles */
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --border-color: rgba(99, 102, 241, 0.1);
+  --card-bg: #ffffff;
+  --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 10px 40px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+.dark-mode {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --border-color: rgba(148, 163, 184, 0.1);
+  --card-bg: #1e293b;
+  --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 10px 40px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .home-page {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.dark-mode .main-nav {
+  background: rgba(15, 23, 42, 0.95);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dark-mode .main-nav.scrolled {
+  background: rgba(15, 23, 42, 0.98);
+}
+
+.dark-mode .nav-link {
+  color: var(--text-secondary);
+}
+
+.dark-mode .nav-link:hover,
+.dark-mode .nav-link.active {
+  color: #6366f1;
+}
+
+.dark-mode .hero-section {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+}
+
+.dark-mode .hero-title,
+.dark-mode .section-title,
+.dark-mode .feature-card h3,
+.dark-mode .card-title {
+  color: var(--text-primary);
+}
+
+.dark-mode .hero-description,
+.dark-mode .section-subtitle,
+.dark-mode .feature-card p,
+.dark-mode .stat-label,
+.dark-mode .card-subtitle {
+  color: var(--text-secondary);
+}
+
+.dark-mode .badge,
+.dark-mode .stat-item,
+.dark-mode .floating-card {
+  background: var(--card-bg);
+  box-shadow: var(--shadow-sm);
+}
+
+.dark-mode .feature-card {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border-color: var(--border-color);
+}
+
+.dark-mode .feature-card:hover {
+  background: #1e293b;
+  border-color: #6366f1;
+  box-shadow: var(--shadow-lg);
+}
+
+.dark-mode .btn-secondary {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.dark-mode .btn-secondary:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.dark-mode .features-section {
+  background: var(--bg-primary);
+}
+
+/* Smooth transition for theme changes */
+*,
+*::before,
+*::after {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}

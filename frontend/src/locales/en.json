@@ -38,13 +38,21 @@
     "medicalRecords": "Medical Records",
     "prescriptions": "Prescriptions",
     "teleconsultation": "Teleconsultation",
+    "teleconsultationTitle": "Teleconsultation",
+    "teleconsultationDesc": "Connect with doctors remotely through video consultations",
+    "support247Title": "Support 24/7",
+    "support247Desc": "Round-the-clock medical assistance and emergency care",
+    "securePrivateTitle": "Secure & Private",
+    "securePrivateDesc": "Your medical data is encrypted and completely confidential",
     "emergencyCare": "Emergency Care",
     "contactUs": "Contact Us",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
     "cookiePolicy": "Cookie Policy",
     "developedBy": "Developed with",
-    "allRightsReserved": "All rights reserved."
+    "allRightsReserved": "All rights reserved.",
+    "appointmentManagement": "Appointment Management",
+    "statistics": "Statistics"
   },
   "nav": {
     "overview": "Overview",
@@ -86,7 +94,8 @@
     "registerHere": "Register here",
     "signInHere": "Sign in here",
     "loginSubtitle": "Access your medical appointments",
-    "registerSubtitle": "Join Mawidi platform"
+    "registerSubtitle": "Join Mawidi platform",
+    "backToHome": "Back to Home"
   },
   "admin": {
     "title": "Admin Panel",
@@ -149,7 +158,20 @@
     "languages": "Languages",
     "insurance": "Accepted Insurance",
     "teleconsultation": "Teleconsultation Available",
-    "address": "Address"
+    "address": "Address",
+    "appointmentDate": "Appointment Date",
+    "appointmentTime": "Appointment Time",
+    "reasonForVisit": "Reason for Visit",
+    "reasonPlaceholder": "Describe your symptoms or reason for consultation...",
+    "time": "Time",
+    "reason": "Reason",
+    "workAddress": "Work Address",
+    "rppsNumber": "RPPS Number",
+    "qualifications": "Qualifications",
+    "consultationFee": "Consultation Fee",
+    "leaveBlankPassword": "leave blank to keep current",
+    "minutes": "minutes",
+    "optional": "Optional"
   },
   "specializations": {
     "cardiology": "Cardiology",
@@ -168,6 +190,9 @@
     "delete": "Delete",
     "edit": "Edit",
     "add": "Add",
+    "confirm": "Confirm",
+    "booking": "Booking...",
+    "confirmBooking": "Confirm Booking",
     "search": "Search",
     "filter": "Filter",
     "yes": "Yes",

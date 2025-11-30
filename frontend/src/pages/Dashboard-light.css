@@ -1,0 +1,115 @@
+/* Light Mode Dashboard - Clean White Theme */
+
+/* Override global card styles for light mode */
+.card,
+.professional-card,
+.appointment-card,
+.stat-card {
+  background: white !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.card:hover,
+.professional-card:hover,
+.appointment-card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
+  transform: translateY(-2px);
+}
+
+/* All text colors - Dark for readability */
+.professional-card h3,
+.appointment-card h3,
+.doctor-info-modal h3,
+.doctor-info-modal p,
+.doctor-info-modal strong,
+.stat-card h3 {
+  color: #000000 !important;
+}
+
+.license,
+.license,
+.email,
+.doctor-details-block {
+  background-color: #dcfce7; /* Light green background */
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.doctor-details-block p {
+  color: #000000 !important;
+  margin: 2px 0;
+  font-weight: 500;
+}
+
+.appointment-details p,
+.appointment-details strong,
+.doctor-details p {
+  color: #000000 !important;
+}
+
+/* Specialization and Price - Blue accent */
+.specialization,
+.price {
+  color: #6366f1 !important;
+  font-weight: 600;
+}
+
+/* Stat card specific */
+.stat-label {
+  color: #64748b !important;
+}
+
+/* Empty state */
+.empty-state {
+  color: #94a3b8 !important;
+}
+
+/* Professional header borders */
+.professional-header,
+.appointment-header {
+  border-bottom: 1px solid #e5e7eb !important;
+}
+
+/* Text Selection - Better readability */
+::selection {
+  background-color: #dbeafe;
+  color: #000000;
+}
+
+::-moz-selection {
+  background-color: #dbeafe;
+  color: #000000;
+}
+
+/* Modal Styles for Light Mode - Fix Visibility */
+.modal-content {
+  background: #ffffff !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+}
+
+.modal-content h2 {
+  color: #1e293b !important;
+}
+
+.modal-content label {
+  color: #1e293b !important;
+}
+
+.modal-content input,
+.modal-content select,
+.modal-content textarea {
+  background: #f8fafc !important;
+  color: #000000 !important;
+  border: 1px solid #cbd5e1 !important;
+  color-scheme: light !important;
+}
+
+.modal-content input:focus,
+.modal-content select:focus,
+.modal-content textarea:focus {
+  background: #ffffff !important;
+  border-color: #6366f1 !important;
+}
